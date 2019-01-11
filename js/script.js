@@ -1,35 +1,36 @@
 /* global $ */
-
-// BELOW Update the songs array with four of your favorites songs.
-var songs = [];
-// BELOW Add 4 More arrays to store images_links, atists, song lengths, and links for each song
-// Make sure they match the same order as your array above
-
-
-
-
+let songs = [];
+let artists = [];
+let lengths = [];
+let images = [];
+let urls = [];
     // BELOW Use forEach Loop to display the data from each of your array's in the correct div
-
-}
-
-function emptySongInfo(){
-    $("#songs").empty();
-    // Use jQuery to empty all of the remaining divs
-
-
-}
-
-
 function addSongInfo(){
     // BELOW write the code to add new items to each of the arrays.
-
-
+    songs.push($("#song").val());
+    artists.push($("#artist").val());
+    lengths.push($("#length").val());
+    images.push($("#image").val());
+    urls.push($("#link").val());
 }
-
+function displaySongInfo(){
+    songs.forEach(function(e, i){
+        console.log(e, i);
+    });
+    artists.forEach(function(e, i){
+        console.log(e, i);
+    });
+    lengths.forEach(function(e, i){
+        console.log(e, i);
+    });
+    images.forEach(function(e, i){
+        console.log(e, i);
+    });
+    urls.forEach(function(e, i){
+        console.log(e, i);
+    });
+}
 $("#add").click(function() {
-    emptySongInfo();
     addSongInfo();
     displaySongInfo();
 });
-
-displaySongInfo();
