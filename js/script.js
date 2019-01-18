@@ -15,7 +15,7 @@ function addSongInfo(){
 }
 function displaySongInfo(){
     songs.forEach(function(e, i){
-        console.log(e, i);
+        $("#songs").append();
     });
     artists.forEach(function(e, i){
         console.log(e, i);
