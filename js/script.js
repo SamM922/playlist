@@ -28,23 +28,23 @@ function displaySongInfo(){
     $("#images").empty();
     $("#links").empty();
     songs.forEach(function(e, i){
-        $("#songs").append("<div>" + e + "</div>");
+        $("#songs").append("<div class = 'text'>" + e + "</div>");
         console.log(e, i);
     });
     artists.forEach(function(e, i){
-        $("#artists").append("<div>" + e + "</div>");
+        $("#artists").append("<div class = 'text'>" + e + "</div>");
         console.log(e, i);
     });
     lengths.forEach(function(e, i){
-        $("#lengths").append("<div>" + e + "</div>");
+        $("#lengths").append("<div class = 'text'" + e + "</div>");
         console.log(e, i);
     });
     images.forEach(function(e, i){
-        $("#images").append("<div>" + e + "</div>");
+        $("#images").append("<div><img src ='" + e + "'></div>");
         console.log(e, i);
     });
     urls.forEach(function(e, i){
-        $("#links").append("<div>" + e + "</div>");
+        $("#links").append("<div><a href = " + e + ">" + e + "</a></div>");
         console.log(e, i);
     });
 }
